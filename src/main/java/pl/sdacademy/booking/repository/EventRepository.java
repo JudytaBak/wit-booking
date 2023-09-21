@@ -5,6 +5,7 @@ package pl.sdacademy.booking.repository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import pl.sdacademy.booking.data.EventEntity;
+import pl.sdacademy.booking.data.ItemEntity;
 import pl.sdacademy.booking.util.DatabaseUtil;
 
 import java.util.List;
@@ -28,4 +29,11 @@ public class EventRepository {
         EventEntity.class);
         return events.getResultList();
     }
+
+    public void addEvent(EventEntity event) {
+        entityManager.getTransaction().begin();
+        entityManager.persist(event);
+        entityManager.getTransaction().commit();
+    }
+
 }

@@ -41,10 +41,13 @@ public class NewEventDtoValidator {
                 result.add("Too early or too late");
             }
         }
+
         //item name is null
         if (newEventDto.getItemName()==null){
             result.add("Without item");
         }
+
         return result;
+
     }
 }
