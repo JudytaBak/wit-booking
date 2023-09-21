@@ -38,7 +38,7 @@ public class EventService {
         if (eventByName != null) {
             return "Sesja już istnieje";
         }
-        /*
+
         EventEntity eventEntity = new EventEntity();
 
         //tutaj bedzie wyszukiwanie id_itemu po jego nazwie - być może można wykorzystać metode repostitory Item findbyName
@@ -47,6 +47,6 @@ public class EventService {
         eventEntity.setTo(newEvent.getToTime());
         eventRepository.addEvent(eventEntity);
         return "Sesja została zapisana";
-         */
+
     }
 }
