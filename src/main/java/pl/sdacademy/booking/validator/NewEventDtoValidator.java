@@ -32,7 +32,10 @@ public class NewEventDtoValidator {
                 result.add("Too long event");
             }
             if (newEventDto.getToTime().isAfter(referenceDate) || newEventDto.getFromTime().isBefore(referenceDate)) {
-                result.add("Wrong date");
+                    result.add("Wrong date");
+                // lub tak
+                //if(newEventDto.getToTime().isAfter(LocalDateTime.now() || newEventDto.getFromTime().isBefore(LocalDateTime.now())
+                //czy oba prawidlowe?
             }
         }
         return result;
