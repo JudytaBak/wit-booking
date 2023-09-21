@@ -6,7 +6,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-
+//komentarz3
 // todo dokonczyc walidator: proba wpisania sesji z przeszlosci;
 //  sesji, ktora przekracza czas pracy salonu;
 //  sesji bez odwolania do produktu
